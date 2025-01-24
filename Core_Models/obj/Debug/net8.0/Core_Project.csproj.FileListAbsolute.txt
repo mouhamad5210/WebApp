@@ -1,0 +1,37 @@
+/Users/br/Desktop/Food_WebApp/Core_Models/bin/Debug/net8.0/Core_Project.deps.json
+/Users/br/Desktop/Food_WebApp/Core_Models/bin/Debug/net8.0/Core_Project.dll
+/Users/br/Desktop/Food_WebApp/Core_Models/bin/Debug/net8.0/Core_Project.pdb
+/Users/br/Desktop/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.csproj.AssemblyReference.cache
+/Users/br/Desktop/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/br/Desktop/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.AssemblyInfoInputs.cache
+/Users/br/Desktop/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.AssemblyInfo.cs
+/Users/br/Desktop/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.csproj.CoreCompileInputs.cache
+/Users/br/Desktop/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.dll
+/Users/br/Desktop/Food_WebApp/Core_Models/obj/Debug/net8.0/refint/Core_Project.dll
+/Users/br/Desktop/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.pdb
+/Users/br/Desktop/Food_WebApp/Core_Models/obj/Debug/net8.0/ref/Core_Project.dll
+/Users/br/Desktop/Web_Exam/Food_WebApp/Core_Models/bin/Debug/net8.0/Core_Project.deps.json
+/Users/br/Desktop/Web_Exam/Food_WebApp/Core_Models/bin/Debug/net8.0/Core_Project.dll
+/Users/br/Desktop/Web_Exam/Food_WebApp/Core_Models/bin/Debug/net8.0/Core_Project.pdb
+/Users/br/Desktop/Web_Exam/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.csproj.AssemblyReference.cache
+/Users/br/Desktop/Web_Exam/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/br/Desktop/Web_Exam/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.AssemblyInfoInputs.cache
+/Users/br/Desktop/Web_Exam/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.AssemblyInfo.cs
+/Users/br/Desktop/Web_Exam/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.csproj.CoreCompileInputs.cache
+/Users/br/Desktop/Web_Exam/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.dll
+/Users/br/Desktop/Web_Exam/Food_WebApp/Core_Models/obj/Debug/net8.0/refint/Core_Project.dll
+/Users/br/Desktop/Web_Exam/Food_WebApp/Core_Models/obj/Debug/net8.0/Core_Project.pdb
+/Users/br/Desktop/Web_Exam/Food_WebApp/Core_Models/obj/Debug/net8.0/ref/Core_Project.dll
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\bin\Debug\net8.0\Core_Project.deps.json
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\bin\Debug\net8.0\Core_Project.dll
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\bin\Debug\net8.0\Core_Project.pdb
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\obj\Debug\net8.0\Core_Project.csproj.AssemblyReference.cache
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\obj\Debug\net8.0\Core_Project.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\obj\Debug\net8.0\Core_Project.AssemblyInfoInputs.cache
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\obj\Debug\net8.0\Core_Project.AssemblyInfo.cs
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\obj\Debug\net8.0\Core_Project.csproj.CoreCompileInputs.cache
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\obj\Debug\net8.0\Core_Project.sourcelink.json
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\obj\Debug\net8.0\Core_Project.dll
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\obj\Debug\net8.0\refint\Core_Project.dll
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\obj\Debug\net8.0\Core_Project.pdb
+c:\Users\obaid\OneDrive - OsloMet\WebApp\WebApp\SubApp1\Food_WebApp\Core_Models\obj\Debug\net8.0\ref\Core_Project.dll

@@ -1,0 +1,59 @@
+﻿@using Core_Project.Models
+@model Food_WebApp1.ViewModels.RegisterViewModel
+
+@{
+    Layout = "AuthLayout";
+    ViewData["Title"] = "Register";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="col-md-5 col-lg-4">
+        <div class="card shadow-lg border-0">
+            <div class="card-header text-center bg-success text-white py-4">
+                <h3 class="mb-0"><i class="fas fa-user-plus"></i> Register</h3>
+            </div>
+            <div class="card-body px-5 py-4">
+                @if (!string.IsNullOrEmpty(ViewBag.message))
+                {
+                    <div class="alert @(ViewBag.state == 200 ? "alert-success" : "alert-danger")">
+                        @ViewBag.message
+                    </div>
+                }
+                <form asp-action="Register" method="post" novalidate>
+                    <div class="form-floating mb-4">
+                        <input asp-for="Username" class="form-control" placeholder="Enter Your Username" />
+                        <label asp-for="Username"><i class="fas fa-user"></i> Username</label>
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input asp-for="Password" class="form-control" type="password" placeholder="Enter Your Password" />
+                        <label asp-for="Password"><i class="fas fa-lock"></i> Password</label>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input asp-for="ConfirmPassword" class="form-control" type="password" placeholder="Confirm Password" />
+                        <label asp-for="ConfirmPassword"><i class="fas fa-lock"></i> Confirm Password</label>
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+
+                   <div class="form-floating mb-4">
+                        <input asp-for="CompanyName" class="form-control" placeholder="Enter Company Name" />
+                        <label asp-for="CompanyName">Company</label>
+                        <span asp-validation-for="CompanyName" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-success btn-lg">
+                            <i class="fas fa-user-plus"></i> Register
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-center bg-light py-3">
+                <p class="mb-1">Already have an account? <a asp-action="Login" class="text-success">Login here</a></p>
+                <p class="mb-0"><a asp-action="Index" asp-controller="Home" class="text-success">Go back to Home</a></p>
+            </div>
+        </div>
+    </div>
+</div>

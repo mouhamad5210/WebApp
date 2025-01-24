@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C#: UnitTesting",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/UnitTesting/UnitTesting.csproj",
+            "launchConfigurationId": "TargetFramework=;UnitTesting"
+        },
+        {
+            "name": "C#: Food_WebApp1 [https]",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/Food_WebApp/Food_WebApp1.csproj",
+            "launchConfigurationId": "TargetFramework=;https"
+        }
+    ]
+}

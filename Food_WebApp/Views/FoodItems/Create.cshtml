@@ -1,0 +1,79 @@
+﻿@model Core_Project.Models.FoodItem
+
+@{
+    ViewData["Title"] = "Create Food Item";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h1 class="text-success text-center mb-4">Create Food Item</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-success text-white">
+                    <h4>Food Item Details</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <!-- Basic Details -->
+                        <h5 class="text-success">Basic Information</h5>
+                        <hr />
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Label" class="form-label">Food Name</label>
+                                    <input asp-for="Label" class="form-control" placeholder="Enter food name" />
+                                    <span asp-validation-for="Label" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="ImageUrl" class="form-label">Image URL</label>
+                                    <input asp-for="ImageUrl" class="form-control" placeholder="Enter image URL" />
+                                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label asp-for="Description" class="form-label">Description</label>
+                            <textarea asp-for="Description" class="form-control" rows="4" placeholder="Enter a description for the food item"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label asp-for="IdFoodGroup" class="form-label">Food Group</label>
+                            <select asp-for="IdFoodGroup" class="form-control">
+                                <option value="">Select food group</option>
+                                @foreach (var item in ViewBag.IdFoodGroup)
+                                {
+                                    <option value="@item.Value">@item.Text</option>
+                                }
+                            </select>
+                            <span asp-validation-for="IdFoodGroup" class="text-danger"></span>
+                        </div>
+
+                      
+
+                        <!-- Buttons -->
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-outline-success">
+                                <i class="fas fa-arrow-left"></i> Back to List
+                            </a>
+                            <button type="submit" class="btn btn-success">
+                                <i class="fas fa-check"></i> Create
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

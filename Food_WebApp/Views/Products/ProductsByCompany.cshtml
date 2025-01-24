@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Core_Project.Models.Product>
+
+@{
+    ViewData["Title"] = "Products by Company";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h1 class="text-success fw-bold text-center">
+        Products by @ViewBag.CompanyName
+    </h1>
+
+    <!-- Product List -->
+    <div class="row g-4 mt-4">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="@product.ImageUrl" alt="@product.Label" class="card-img-top img-fluid" style="max-height: 200px; object-fit: cover;" />
+                    <div class="card-body">
+                        <h5 class="card-title text-success">@product.Label</h5>
+                        <p class="card-text"><strong>Price:</strong> $@product.Prix</p>
+                        <p class="card-text"><strong>Food Item:</strong> @product.IdFoodItemNavigation.Label</p>
+                        <a asp-action="Details" asp-route-id="@product.IdProduct" class="btn btn-info btn-sm">
+                            <i class="fas fa-info-circle"></i> View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="mt-4">
+        <a asp-action="Index" class="btn btn-outline-success">
+            <i class="fas fa-arrow-left"></i> Back to All Products
+        </a>
+    </div>
+</div>

@@ -1,0 +1,146 @@
+﻿@model Core_Project.Models.Product
+
+@{
+    ViewData["Title"] = "Edit Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h1 class="text-success text-center mb-4">Edit Product</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-success text-white">
+                    <h4>Edit Details for @Model.Label</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <!-- Hidden Field for ID -->
+                        <input type="hidden" asp-for="IdProduct" />
+
+                        <!-- Basic Details -->
+                        <h5 class="text-success">Basic Information</h5>
+                        <hr />
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Label" class="form-label">Product Name</label>
+                                    <input asp-for="Label" class="form-control" placeholder="Enter product name" />
+                                    <span asp-validation-for="Label" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Prix" class="form-label">Price ($)</label>
+                                    <input asp-for="Prix" class="form-control" placeholder="Enter product price" />
+                                    <span asp-validation-for="Prix" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Description" class="form-label">Description</label>
+                            <textarea asp-for="Description" class="form-control" rows="4" placeholder="Enter a description for the product"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <!-- Dropdowns for Company and Food Item -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="IdFoodItem" class="form-label">Food Item</label>
+                                    <select asp-for="IdFoodItem" class="form-control" asp-items="ViewBag.IdFoodItem">
+                                        <option value="">Select food item</option>
+                                    </select>
+                                    <span asp-validation-for="IdFoodItem" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Image -->
+                        <div class="form-group mb-3">
+                            <label asp-for="ImageUrl" class="form-label">Image URL</label>
+                            <input asp-for="ImageUrl" class="form-control" placeholder="Enter image URL" />
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                        </div>
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                        {
+                            <div class="text-center mb-4">
+                                <img src="@Model.ImageUrl" alt="@Model.Label" class="img-fluid rounded shadow" style="max-height: 200px;" />
+                            </div>
+                        }
+
+                        <!-- Nutrition Information -->
+                        <h5 class="text-success">Nutrition Content</h5>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="EnergyKcal" class="form-label">Energy (Kcal)</label>
+                                    <input asp-for="EnergyKcal" class="form-control" placeholder="Enter energy in Kcal" />
+                                    <span asp-validation-for="EnergyKcal" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="FatG" class="form-label">Fat (g)</label>
+                                    <input asp-for="FatG" class="form-control" placeholder="Enter fat in grams" />
+                                    <span asp-validation-for="FatG" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="CarbohydratG" class="form-label">Carbohydrates (g)</label>
+                                    <input asp-for="CarbohydratG" class="form-control" placeholder="Enter carbohydrates in grams" />
+                                    <span asp-validation-for="CarbohydratG" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="ProteinG" class="form-label">Protein (g)</label>
+                                    <input asp-for="ProteinG" class="form-control" placeholder="Enter protein in grams" />
+                                    <span asp-validation-for="ProteinG" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="SodiumMg" class="form-label">Sodium (mg)</label>
+                                    <input asp-for="SodiumMg" class="form-control" placeholder="Enter sodium in milligrams" />
+                                    <span asp-validation-for="SodiumMg" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="SugarG" class="form-label">Sugar (g)</label>
+                                    <input asp-for="SugarG" class="form-control" placeholder="Enter sugar in grams" />
+                                    <span asp-validation-for="SugarG" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-outline-success">
+                                <i class="fas fa-arrow-left"></i> Back to List
+                            </a>
+                            <button type="submit" class="btn btn-success">
+                                <i class="fas fa-save"></i> Save
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

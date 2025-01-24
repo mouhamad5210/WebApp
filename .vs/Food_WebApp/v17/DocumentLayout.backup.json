@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{446BB1FA-BD8E-4B44-B73D-41E83F76FB43}|Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj|c:\\users\\chaki\\source\\repos\\food_webapp\\food_webapp2_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{446BB1FA-BD8E-4B44-B73D-41E83F76FB43}|Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj|solutionrelative:food_webapp2_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{446BB1FA-BD8E-4B44-B73D-41E83F76FB43}|Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj|c:\\users\\chaki\\source\\repos\\food_webapp\\food_webapp2_backend\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{446BB1FA-BD8E-4B44-B73D-41E83F76FB43}|Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj|solutionrelative:food_webapp2_backend\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{446BB1FA-BD8E-4B44-B73D-41E83F76FB43}|Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj|c:\\users\\chaki\\source\\repos\\food_webapp\\food_webapp2_backend\\controllers\\fooditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{446BB1FA-BD8E-4B44-B73D-41E83F76FB43}|Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj|solutionrelative:food_webapp2_backend\\controllers\\fooditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{446BB1FA-BD8E-4B44-B73D-41E83F76FB43}|Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj|c:\\users\\chaki\\source\\repos\\food_webapp\\food_webapp2_backend\\utilities\\sessionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{446BB1FA-BD8E-4B44-B73D-41E83F76FB43}|Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj|solutionrelative:food_webapp2_backend\\utilities\\sessionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EFCF95-D717-4D63-A305-9D9D43E9F239}|Food_WebApp\\Food_WebApp1.csproj|c:\\users\\chaki\\source\\repos\\food_webapp\\food_webapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5EFCF95-D717-4D63-A305-9D9D43E9F239}|Food_WebApp\\Food_WebApp1.csproj|solutionrelative:food_webapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EFCF95-D717-4D63-A305-9D9D43E9F239}|Food_WebApp\\Food_WebApp1.csproj|c:\\users\\chaki\\source\\repos\\food_webapp\\food_webapp\\controllers\\fooditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5EFCF95-D717-4D63-A305-9D9D43E9F239}|Food_WebApp\\Food_WebApp1.csproj|solutionrelative:food_webapp\\controllers\\fooditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5EFCF95-D717-4D63-A305-9D9D43E9F239}|Food_WebApp\\Food_WebApp1.csproj|c:\\users\\chaki\\source\\repos\\food_webapp\\food_webapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5EFCF95-D717-4D63-A305-9D9D43E9F239}|Food_WebApp\\Food_WebApp1.csproj|solutionrelative:food_webapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{446BB1FA-BD8E-4B44-B73D-41E83F76FB43}|Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj|c:\\users\\chaki\\source\\repos\\food_webapp\\food_webapp2_backend\\food_webapp2_backend.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{446BB1FA-BD8E-4B44-B73D-41E83F76FB43}|Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj|solutionrelative:food_webapp2_backend\\food_webapp2_backend.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SessionHelper.cs",
+              "DocumentMoniker": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp2_Backend\\Utilities\\SessionHelper.cs",
+              "RelativeDocumentMoniker": "Food_WebApp2_Backend\\Utilities\\SessionHelper.cs",
+              "ToolTip": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp2_Backend\\Utilities\\SessionHelper.cs",
+              "RelativeToolTip": "Food_WebApp2_Backend\\Utilities\\SessionHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:11:10.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp2_Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Food_WebApp2_Backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp2_Backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Food_WebApp2_Backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:10:04.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Food_WebApp\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Food_WebApp\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAmwK4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:09:55.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Food_WebApp\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Food_WebApp\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAcwO8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:08:26.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp2_Backend\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Food_WebApp2_Backend\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp2_Backend\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Food_WebApp2_Backend\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:08:18.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FoodItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp2_Backend\\Controllers\\FoodItemsController.cs",
+              "RelativeDocumentMoniker": "Food_WebApp2_Backend\\Controllers\\FoodItemsController.cs",
+              "ToolTip": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp2_Backend\\Controllers\\FoodItemsController.cs",
+              "RelativeToolTip": "Food_WebApp2_Backend\\Controllers\\FoodItemsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:07:57.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Food_WebApp2_Backend",
+              "DocumentMoniker": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj",
+              "RelativeDocumentMoniker": "Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj",
+              "ToolTip": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj",
+              "RelativeToolTip": "Food_WebApp2_Backend\\Food_WebApp2_Backend.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-28T21:07:55.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FoodItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp\\Controllers\\FoodItemsController.cs",
+              "RelativeDocumentMoniker": "Food_WebApp\\Controllers\\FoodItemsController.cs",
+              "ToolTip": "C:\\Users\\chaki\\source\\repos\\Food_WebApp\\Food_WebApp\\Controllers\\FoodItemsController.cs",
+              "RelativeToolTip": "Food_WebApp\\Controllers\\FoodItemsController.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAcwM0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:07:42.274Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

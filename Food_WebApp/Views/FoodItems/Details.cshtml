@@ -1,0 +1,116 @@
+﻿@model Core_Project.Models.FoodItem
+
+@{
+    ViewData["Title"] = "Food Item Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h1 class="text-success text-center mb-4">Food Item Details</h1>
+    <div class="row">
+        <!-- Left Section: Food Details -->
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-header bg-success text-white">
+                    <h4>@Model.Label</h4>
+                </div>
+                <div class="card-body">
+                    <!-- Basic Details -->
+                    <h5 class="text-success">Basic Information</h5>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-4 text-secondary">Food Name</dt>
+                        <dd class="col-sm-8">@Model.Label</dd>
+
+                        <dt class="col-sm-4 text-secondary">Food Group</dt>
+                        <dd class="col-sm-8">@Model.IdFoodGroupNavigation.Label</dd>
+
+                        <dt class="col-sm-4 text-secondary">Description</dt>
+                        <dd class="col-sm-8">
+                            @if (!string.IsNullOrEmpty(Model.Description))
+                            {
+                                @Model.Description
+                            }
+                            else
+                            {
+                                <span class="text-muted">No description available</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-4 text-secondary">Image</dt>
+                        <dd class="col-sm-8">
+                            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                            {
+                                <img src="@Model.ImageUrl" alt="@Model.Label" class="img-fluid rounded shadow" style="max-height: 200px;" />
+                            }
+                            else
+                            {
+                                <span class="text-muted">No image available</span>
+                            }
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="card-footer text-end">
+                     @if (Food_WebApp1.Utilities.SessionHelper.IsUserLoggedIn())
+                            {
+                            <a asp-action="Edit" asp-route-id="@Model?.IdFoodItem" class="btn btn-primary me-2">
+                                <i class="fas fa-edit"></i> Edit
+                            </a>
+                            }
+                    <a asp-action="Index" class="btn btn-outline-success">
+                        <i class="fas fa-arrow-left"></i> Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: Related Products -->
+        <div class="col-md-6">
+            <h5 class="text-success text-center">Related Products</h5>
+            <hr />
+            @if (Model.Products != null && Model.Products.Any())
+            {
+                <div class="row gy-4">
+                    @foreach (var product in Model.Products)
+                    {
+                        <div class="col-md-12">
+                            <div class="card shadow-sm">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        @if (!string.IsNullOrEmpty(product.ImageUrl))
+                                        {
+                                            <img src="@product.ImageUrl" alt="@product.Label" class="img-fluid rounded-start" style="height: 150px; object-fit: cover;">
+                                        }
+                                        else
+                                        {
+                                            <div class="bg-secondary text-white d-flex align-items-center justify-content-center rounded-start" style="height: 150px;">
+                                                No Image
+                                            </div>
+                                        }
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary">
+                                                <a asp-action="ProductsByCompany" asp-controller="Products" asp-route-companyId="@product.IdCompany" class="text-success">
+                                                    @product.IdCompanyNavigation.Label
+                                                </a>
+                                                </h5>
+                                            <h5 class="card-title text-primary">@product.Label</h5>
+                                            <p class="card-text mb-1"><strong>Price:</strong> @product.Prix NK</p>
+                                            <p class="card-text"><strong>Company:</strong> @product.IdCompanyNavigation.Label</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <p class="text-muted text-center">No related products available for this food item.</p>
+            }
+        </div>
+    </div>
+</div>

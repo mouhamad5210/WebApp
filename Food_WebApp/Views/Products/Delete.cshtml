@@ -1,0 +1,97 @@
+﻿@model Core_Project.Models.Product
+
+@{
+    ViewData["Title"] = "Delete Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0"><i class="fas fa-trash-alt"></i> Confirm Deletion</h4>
+                </div>
+                <div class="card-body">
+                    <h5 class="text-center text-danger">Are you sure you want to delete this product?</h5>
+                    <p class="text-center text-muted mb-4">This action cannot be undone.</p>
+
+                    <!-- Product Details -->
+                    <div class="card bg-light shadow-sm mb-3">
+                        <div class="card-body">
+                            <h5 class="text-success">Product Details</h5>
+                            <hr />
+                            <dl class="row">
+                                <dt class="col-sm-4 text-secondary">Product Name:</dt>
+                                <dd class="col-sm-8">@Model.Label</dd>
+
+                                <dt class="col-sm-4 text-secondary">Price:</dt>
+                                <dd class="col-sm-8">$@Model.Prix</dd>
+
+                                <dt class="col-sm-4 text-secondary">Company:</dt>
+                                <dd class="col-sm-8">@Model.IdCompanyNavigation.Label</dd>
+
+                                <dt class="col-sm-4 text-secondary">Food Item:</dt>
+                                <dd class="col-sm-8">@Model.IdFoodItemNavigation.Label</dd>
+
+                                <dt class="col-sm-4 text-secondary">Description:</dt>
+                                <dd class="col-sm-8">
+                                    @if (!string.IsNullOrEmpty(Model.Description))
+                                    {
+                                        @Model.Description
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">No description available</span>
+                                    }
+                                </dd>
+                            </dl>
+
+                            <h5 class="text-success mt-3">Product Image</h5>
+                            <hr />
+                            <div class="text-center">
+                                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                                {
+                                    <img src="@Model.ImageUrl" alt="@Model.Label" class="img-fluid rounded shadow" style="max-height: 300px;" />
+                                }
+                                else
+                                {
+                                    <div class="bg-secondary text-white d-flex align-items-center justify-content-center rounded" style="height: 200px;">
+                                        No Image Available
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Confirmation Form -->
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="IdProduct" />
+                        <div class="d-flex justify-content-center gap-3">
+                            <button type="submit" class="btn btn-danger btn-lg shadow-sm">
+                                <i class="fas fa-check-circle"></i> Confirm Delete
+                            </button>
+                            <a asp-action="Index" class="btn btn-outline-secondary btn-lg shadow-sm">
+                                <i class="fas fa-arrow-left"></i> Back to List
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Optional: Add a simple fade-in effect for better UX
+        document.addEventListener("DOMContentLoaded", function () {
+            const card = document.querySelector('.card');
+            card.style.opacity = 0;
+            setTimeout(() => {
+                card.style.transition = "opacity 0.5s";
+                card.style.opacity = 1;
+            }, 50);
+        });
+    </script>
+}

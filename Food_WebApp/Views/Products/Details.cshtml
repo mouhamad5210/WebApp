@@ -1,0 +1,108 @@
+﻿@model Core_Project.Models.Product
+
+@{
+    ViewData["Title"] = "Product Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h1 class="text-success text-center mb-4">Product Details</h1>
+    <div class="row">
+        <!-- Left Section: Product Details -->
+        <div class="col">
+            <div class="card shadow-lg">
+                <div class="card-header bg-success text-white">
+                    <h4>@Model.Label</h4>
+                </div>
+                <div class="card-body">
+                    <!-- Basic Details -->
+                    <h5 class="text-success">Basic Information</h5>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-4 text-secondary">Product Name</dt>
+                        <dd class="col-sm-8">@Model.Label</dd>
+
+                        <dt class="col-sm-4 text-secondary">Price</dt>
+                        <dd class="col-sm-8"> @Model.Prix NK</dd>
+
+                        <dt class="col-sm-4 text-secondary">Company</dt>
+                        <dd class="col-sm-8">
+                            <a asp-action="ProductsByCompany" asp-route-companyId="@Model.IdCompany" class="text-success">
+                                @Model.IdCompanyNavigation.Label
+                            </a>
+                        </dd>
+
+
+                        <dt class="col-sm-4 text-secondary">Food Item</dt>
+                        <dd class="col-sm-8">@Model.IdFoodItemNavigation.Label</dd>
+
+                        <dt class="col-sm-4 text-secondary">Description</dt>
+                        <dd class="col-sm-8">
+                            @if (!string.IsNullOrEmpty(Model.Description))
+                            {
+                                @Model.Description
+                            }
+                            else
+                            {
+                                <span class="text-muted">No description available</span>
+                            }
+                        </dd>
+
+                        <!-- Nutrition Information -->
+                        <h5 class="text-success mt-4">Nutrition Content</h5>
+                        <hr />
+                        <dl class="row">
+                            <dt class="col-sm-4 text-secondary">Energy (Kcal)</dt>
+                            <dd class="col-sm-8">@Model.EnergyKcal</dd>
+
+                            <dt class="col-sm-4 text-secondary">Fat (g)</dt>
+                            <dd class="col-sm-8">@Model.FatG</dd>
+
+                            <dt class="col-sm-4 text-secondary">Carbohydrates (g)</dt>
+                            <dd class="col-sm-8">@Model.CarbohydratG</dd>
+
+                            <dt class="col-sm-4 text-secondary">Protein (g)</dt>
+                            <dd class="col-sm-8">@Model.ProteinG</dd>
+
+                            <dt class="col-sm-4 text-secondary">Sodium (mg)</dt>
+                            <dd class="col-sm-8">@Model.SodiumMg</dd>
+
+                            <dt class="col-sm-4 text-secondary">Sugar (g)</dt>
+                            <dd class="col-sm-8">@Model.SugarG</dd>
+
+                    </dl>
+
+                    <!-- Image -->
+                    <h5 class="text-success mt-4">Image</h5>
+                    <hr />
+                    <div class="text-center">
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                        {
+                            <img src="@Model.ImageUrl" alt="@Model.Label" class="img-fluid rounded shadow" style="max-height: 300px;" />
+                        }
+                        else
+                        {
+                            <div class="bg-secondary text-white d-flex align-items-center justify-content-center rounded" style="height: 200px;">
+                                No Image
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <div class="card-footer text-end">
+                    @if (Food_WebApp1.Utilities.SessionHelper.IsUserLoggedIn())
+                    {
+                        <a asp-action="Edit" asp-route-id="@Model.IdProduct" class="btn btn-success me-2">
+                            <i class="fas fa-edit"></i> Edit
+                        </a>
+                    }
+                    <a asp-action="Index" class="btn btn-outline-success">
+                        <i class="fas fa-arrow-left"></i> Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
